@@ -1,0 +1,119 @@
+body{
+    color: #222;
+    background-color: #F2F2F2;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+#modo{
+    background-color: #444;
+    color: #EEE;
+    border-radius: 25px;
+    width: 60px;
+    padding: 7px 10px;
+    border: none;
+    margin: 3px auto;
+    text-align: center;
+}
+/*modo dark*/
+body.dark{
+    background-color: #121212;
+    color: #eee;
+}
+body.dark .contenedor{
+    border: #F2F2F2 solid 1px;
+    background-image: url(fondoDark.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body.dark .mensaje{
+    background-color: #2c9dfac9;
+}
+
+body.dark .mensaje2{
+    background-color: #bb2d7bf3;
+}
+body.dark #texto{
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: #FFF;
+}
+/*modo dark*/
+p{
+    margin: 0;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column; /* clave */
+    width: 400px;
+    min-width: 300px;
+    height: 99vh;
+    border: #222 solid 1px;
+    margin: 2px auto;
+    background-image: url(fondoChat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.chat{
+    flex: 1;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.mensaje{
+    display: block;
+    width: fit-content;
+    max-width: 60%;
+    background-color: #2cfa77;
+    padding: 11px;
+    padding-right: 17px;
+    border-radius: 10px 10px 10px 0;
+    margin-left: 20px;
+    margin-top: 6px;
+}
+
+.mensaje2{
+    display: block;
+    width: fit-content;
+    max-width: 60%;
+    align-self: flex-end;
+    background-color: #09c0eeb0;
+    padding: 11px;
+    padding-left: 17px;
+    border-radius: 10px 0px 10px 10px;
+    margin-right: 20px; 
+    margin-top: 6px;
+}
+
+.inputs{
+    display: flex;
+    gap: 0px;
+    padding: 5px;
+    background-color: transparent;
+    margin: 0;
+}
+
+#texto{
+    flex: 1;
+    padding: 15px;
+    padding-left: 23px;
+    border-radius: 25px 0px 0 25px;
+    border: 1px solid #CCC;
+    outline: none;
+}
+
+#boton{
+    padding: 15px 14px;
+    background-color: #25D366;
+    color: #FFF;
+    border: none;
+    border-radius: 0px 25px 25px 0;
+    font-weight: 700;
+}
